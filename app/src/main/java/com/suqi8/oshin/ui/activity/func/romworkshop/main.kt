@@ -88,7 +88,7 @@ fun RomWorkshop(
                             progress = { progress.progress },
                             modifier = Modifier.padding(1.dp)
                         )
-                        TextButton("立即体验", onClick = {openUrl(context, "https://github.com/suqi8/ImageStudio/releases/latest")}, modifier = Modifier.padding(6.dp), colors = ButtonDefaults.textButtonColorsPrimary())
+                        TextButton("立即体验", onClick = {openUrl(context, "https://github.com/suqi8/ImageStudio/releases/latest")}, modifier = Modifier.padding(6.dp).fillMaxWidth().padding(32.dp), colors = ButtonDefaults.textButtonColorsPrimary())
                     }
                 }
             }
