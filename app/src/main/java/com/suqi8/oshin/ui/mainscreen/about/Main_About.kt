@@ -414,6 +414,7 @@ fun Main_About(
         val buttonAlpha by derivedStateOf {
             if (scroll.firstVisibleItemIndex > 0) 0f else (1f - (scroll.firstVisibleItemScrollOffset.toFloat() / 300)).coerceIn(0f, 1f)
         }
+        // button of check update
         with(sharedTransitionScope) {
             Button(
                 modifier = Modifier
