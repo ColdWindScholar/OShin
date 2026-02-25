@@ -670,7 +670,7 @@ fun Button(onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean 
 }
 
 @SuppressLint("UseKtx")
-private fun openUrl(context: Context, url: String) {
+fun openUrl(context: Context, url: String) {
     val intent = Intent(Intent.ACTION_VIEW, url.toUri())
     context.startActivity(intent)
 }
